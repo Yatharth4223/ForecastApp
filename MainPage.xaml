@@ -16,10 +16,19 @@
                 HorizontalOptions="Center" />
 
             <Button
-                x:Name="CounterBtn"
-                Text="Click me"
+                x:Name="Setting"
+                Text="Setting"
                 SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
+                
+                Clicked="Setting_Clicked"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="MatchSelection"
+                Text="Matches"
+                SemanticProperties.Hint="Counts the number of times you click"
+                
+                Clicked="MatchSelection_Clicked"
                 HorizontalOptions="Center" />
 
         </VerticalStackLayout>
