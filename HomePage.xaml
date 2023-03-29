@@ -3,11 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ForecastApp.HomePage"
              Title="HomePage">
-    <VerticalStackLayout>
+    <VerticalStackLayout
+        BackgroundColor="LightSkyBlue">
         <Label 
             Text="Welcome to The Home Page of our Forecasting app"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center"
+            FontSize="30"
+            Padding="30"
+            TextColor="Blue"/>
 
         <Button
             x:Name="SettingsButton"
