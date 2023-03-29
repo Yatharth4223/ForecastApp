@@ -3,10 +3,65 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ForecastApp.Setting"
              Title="Setting">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Grid
+        BackgroundColor="AliceBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Text="General Setting"
+               Grid.ColumnSpan="2"
+               FontAttributes="Bold"
+               FontSize="50"
+               TextColor="Blue"
+               HorizontalTextAlignment="Center"
+               />
+        <Frame
+            BackgroundColor="LightBlue"
+            Grid.Row="0"
+            Grid.Column="0"
+            Grid.RowSpan="2" Grid.ColumnSpan="2"
+            CornerRadius="15"
+            Margin="110">
+
+            <StackLayout>
+                <Label
+                x:Name="AppTheme"
+                Text="App Theme"
+                HorizontalTextAlignment="Center"
+                FontAttributes="Bold"
+                FontSize="20"/>
+
+                <HorizontalStackLayout
+                    HorizontalOptions="Center"
+                    
+                    Spacing="40">
+                    <Label Text="Dark Mode"/>
+                    <Switch/>
+                    
+
+                </HorizontalStackLayout>
+                <Label x:Name="Location"
+                    Text="Location"
+                    HorizontalTextAlignment="Center"
+                    FontAttributes="Bold"
+                    FontSize="20"/>
+
+                <Label />
+
+
+
+            </StackLayout>
+            
+            
+
+
+        </Frame>
+
+    </Grid>
 </ContentPage>
