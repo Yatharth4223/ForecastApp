@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ForecastApp.HomePage"
+             Title="HomePage">
+    <VerticalStackLayout>
+        <Label 
+            Text="Welcome to The Home Page of our Forecasting app"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Button
+            x:Name="SettingsButton"
+            Text="Settings Button"
+            Clicked="SettingsButton_Clicked"
+            />
+
+        <Button
+            x:Name="MatchSelectionButton"
+            Text="MatchSelectionButton"
+            Clicked="MatchSelectionButton_Clicked"
+            />
+        
+    </VerticalStackLayout>
+</ContentPage>
