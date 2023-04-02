@@ -3,10 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ForecastApp.Setting"
              Title="Setting">
-    <Grid
-        BackgroundColor="AliceBlue">
+    
+    <Grid>
+
         <Grid.RowDefinitions>
-            <RowDefinition/>
+            <RowDefinition />
             <RowDefinition/>
             
         </Grid.RowDefinitions>
@@ -14,6 +15,7 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+       
         <Label Text="General Setting"
                Grid.ColumnSpan="2"
                FontAttributes="Bold"
@@ -22,6 +24,7 @@
                HorizontalTextAlignment="Center"
                />
         <Frame
+           
             BackgroundColor="LightBlue"
             Grid.Row="0"
             Grid.Column="0"
@@ -62,6 +65,7 @@
 
 
         </Frame>
-
+    
     </Grid>
+    
 </ContentPage>

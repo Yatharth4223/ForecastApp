@@ -49,6 +49,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiImage Remove="Resources\Images\soccerplayersactionprofessionalstadiumcopy.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\Images\soccerplayersactionprofessionalstadium.jpg" />
+	  <None Remove="Resources\Images\soccerplayersactionprofessionalstadiumCopy.jpg" />
+	  <None Remove="Resources\Images\soccerplayersactionprofessionalstadiumCopy.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="HomePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
