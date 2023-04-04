@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ForecastApp.MatchSelection"
-             Title="MatchSelection">
-
+             x:Class="ForecastApp.Ipl"
+             Title="Ipl">
     <ScrollView>
         <StackLayout
             BackgroundColor="BlanchedAlmond">
@@ -23,15 +21,15 @@
                 
                 TextChanged="SearchName_TextChanged"/>
             <ListView 
-                x:Name="TeamsListView"
-                ItemTapped="TeamsListView_ItemTapped"
+                x:Name="IplListView"
+                ItemTapped="IplListView_ItemTapped"
                 
                 >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Orientation="Horizontal" Margin="20" >
-                                
+
                                 <Image Source="{Binding HomeTeamLogo}" HorizontalOptions="StartAndExpand" WidthRequest="120" />
                                 <Label Text="{Binding HomeTeam}" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
                                 <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
@@ -41,16 +39,15 @@
 
                                 <Label Text="{Binding Opponent}" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
                                 <Image Source="{Binding OpponentLogo}" HorizontalOptions="EndAndExpand" WidthRequest="120"/>
-                                
-                                
+
+
 
                             </StackLayout>
                         </ViewCell>
-                        
+
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
         </StackLayout>
     </ScrollView>
-    
 </ContentPage>

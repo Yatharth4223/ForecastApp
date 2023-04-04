@@ -24,6 +24,11 @@
             Text="MatchSelectionButton"
             Clicked="MatchSelectionButton_Clicked"
             />
+        <Button
+            x:Name="IplMatchSelectionButton"
+            Text="IPL"
+            Clicked="IplMatchSelectionButton_Clicked"
+            />
         
     </VerticalStackLayout>
 </ContentPage>

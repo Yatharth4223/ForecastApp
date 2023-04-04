@@ -16,4 +16,9 @@ public partial class HomePage : ContentPage
     {
         await Navigation.PushAsync(new MatchSelection());
     }
+
+    private async void IplMatchSelectionButton_Clicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new Ipl());
+    }
 }
