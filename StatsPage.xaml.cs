@@ -1,3 +1,5 @@
+using ForecastApp.Models;
+
 namespace ForecastApp;
 
 public partial class StatsPage : ContentPage

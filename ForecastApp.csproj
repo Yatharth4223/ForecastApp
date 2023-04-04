@@ -53,9 +53,31 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\Atletico.png" />
+	  <None Remove="Resources\Images\CA.png" />
+	  <None Remove="Resources\Images\cadizcf.png" />
+	  <None Remove="Resources\Images\csk.png" />
+	  <None Remove="Resources\Images\dc.png" />
+	  <None Remove="Resources\Images\Fcb.png" />
+	  <None Remove="Resources\Images\getafecf.jpg" />
+	  <None Remove="Resources\Images\gt.png" />
+	  <None Remove="Resources\Images\ipl.png" />
+	  <None Remove="Resources\Images\kkr.png" />
+	  <None Remove="Resources\Images\laliga.png" />
+	  <None Remove="Resources\Images\lsg.jpg" />
+	  <None Remove="Resources\Images\mi.jpg" />
+	  <None Remove="Resources\Images\pkxi.jpg" />
+	  <None Remove="Resources\Images\rcb.jpg" />
+	  <None Remove="Resources\Images\RCD.png" />
+	  <None Remove="Resources\Images\rcdmallorca.png" />
+	  <None Remove="Resources\Images\realmadrid.png" />
+	  <None Remove="Resources\Images\realsociedad.png" />
+	  <None Remove="Resources\Images\rr.png" />
+	  <None Remove="Resources\Images\SevillaFC.png" />
 	  <None Remove="Resources\Images\soccerplayersactionprofessionalstadium.jpg" />
 	  <None Remove="Resources\Images\soccerplayersactionprofessionalstadiumCopy.jpg" />
 	  <None Remove="Resources\Images\soccerplayersactionprofessionalstadiumCopy.png" />
+	  <None Remove="Resources\Images\srh.png" />
 	</ItemGroup>
 
 	<ItemGroup>
