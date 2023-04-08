@@ -40,8 +40,6 @@
                                 <Label Text="{Binding Opponent}" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
                                 <Image Source="{Binding OpponentLogo}" HorizontalOptions="EndAndExpand" WidthRequest="120"/>
 
-
-
                             </StackLayout>
                         </ViewCell>
 

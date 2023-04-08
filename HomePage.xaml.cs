@@ -2,7 +2,9 @@ namespace ForecastApp;
 
 public partial class HomePage : ContentPage
 {
-	public HomePage()
+    
+
+    public HomePage()
 	{
 		InitializeComponent();
 	}
@@ -12,13 +14,15 @@ public partial class HomePage : ContentPage
         await Navigation.PushAsync(new Setting());
     }
 
-    async private void MatchSelectionButton_Clicked(object sender, EventArgs e)
+    async private void LaLigaMatchSelectionButton_Clicked(object sender, EventArgs e)
     {
+        
         await Navigation.PushAsync(new MatchSelection());
     }
 
     private async void IplMatchSelectionButton_Clicked(object sender, EventArgs e)
     {
+       
         await Navigation.PushAsync(new Ipl());
     }
 }
