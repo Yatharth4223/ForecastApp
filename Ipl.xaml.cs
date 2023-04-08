@@ -18,6 +18,8 @@ public partial class Ipl : ContentPage
 
     private void IplListView_ItemTapped(object sender, ItemTappedEventArgs e)
     {
-        var selectedIplMatch = IplListView.SelectedItem as Ipl;
+        var selectedMatch = IplListView.SelectedItem as Ipl;
+        
+
     }
 }

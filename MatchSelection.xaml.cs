@@ -19,6 +19,7 @@ public partial class MatchSelection : ContentPage
 
     private void TeamsListView_ItemTapped(object sender, ItemTappedEventArgs e)
     {
-        var selectedMatch = TeamsListView.SelectedItem as Team;
+        var selectedMatch = TeamsListView.SelectedItem as MatchSelection;
+        
     }
 }

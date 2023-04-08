@@ -21,7 +21,7 @@
 
         <Button
             x:Name="MatchSelectionButton"
-            Text="MatchSelectionButton"
+            Text="LaLiga"
             Clicked="MatchSelectionButton_Clicked"
             />
         <Button
