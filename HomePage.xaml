@@ -19,14 +19,17 @@
             Clicked="SettingsButton_Clicked"
             />
 
+        <Label
+            Text="Choose the league which you want to see forecast of: "/>
+
         <Button
-            x:Name="MatchSelectionButton"
-            Text="MatchSelectionButton"
-            Clicked="MatchSelectionButton_Clicked"
+            x:Name="LaLigaMatchSelectionButton"
+            Text="Click to select La Liga Match"
+            Clicked="LaLigaMatchSelectionButton_Clicked"
             />
         <Button
             x:Name="IplMatchSelectionButton"
-            Text="IPL"
+            Text="Click to select IPL Matches"
             Clicked="IplMatchSelectionButton_Clicked"
             />
         

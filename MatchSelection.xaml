@@ -30,7 +30,8 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout Orientation="Horizontal" Margin="20" >
+                            <StackLayout 
+                                Orientation="Horizontal" Margin="20">
                                 
                                 <Image Source="{Binding HomeTeamLogo}" HorizontalOptions="StartAndExpand" WidthRequest="120" />
                                 <Label Text="{Binding HomeTeam}" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
@@ -42,8 +43,6 @@
                                 <Label Text="{Binding Opponent}" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
                                 <Image Source="{Binding OpponentLogo}" HorizontalOptions="EndAndExpand" WidthRequest="120"/>
                                 
-                                
-
                             </StackLayout>
                         </ViewCell>
                         

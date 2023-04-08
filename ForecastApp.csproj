@@ -53,7 +53,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Images\Atletico.png" />
+	  <None Remove="Resources\Images\aletico.png" />
 	  <None Remove="Resources\Images\CA.png" />
 	  <None Remove="Resources\Images\cadizcf.png" />
 	  <None Remove="Resources\Images\csk.png" />

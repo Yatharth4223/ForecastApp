@@ -5,8 +5,14 @@
              Title="StatsPage">
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
+            x:Name="FirstStatsLabel"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+
+        <Label 
+            x:Name="SecondStatsLabel"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
     </VerticalStackLayout>
 </ContentPage>
