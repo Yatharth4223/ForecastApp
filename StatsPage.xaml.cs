@@ -4,7 +4,11 @@ namespace ForecastApp;
 public partial class StatsPage : ContentPage
 {
     private MatchData _matchData;
+<<<<<<< HEAD
     public StatsPage(MatchSelection matchSelection)
+=======
+    public StatsPage()
+>>>>>>> 7955223b21324d893754cad964439c6cd282145d
     {
         InitializeComponent();
         _matchData = new MatchData();

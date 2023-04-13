@@ -35,7 +35,7 @@
             <StackLayout>
                 <Label
                 x:Name="AppTheme"
-                Text="App Theme"
+                Text="Dark Mode"
                 HorizontalTextAlignment="Center"
                 FontAttributes="Bold"
                 FontSize="20"/>
@@ -45,17 +45,24 @@
                     
                     Spacing="40">
                     <Label Text="Dark Mode"/>
-                    <Switch/>
+                    <Switch x:Name="DarkMode"
+                            Toggled="DarkMode_Toggled"/>
                     
 
                 </HorizontalStackLayout>
-                <Label x:Name="Location"
-                    Text="Location"
+                <Label x:Name="Sport"
+                    Text="Sport"
                     HorizontalTextAlignment="Center"
                     FontAttributes="Bold"
                     FontSize="20"/>
 
-                <Label />
+                <Picker x:Name="FavoritePicker" SelectedIndexChanged="FavoritePicker_SelectedIndexChanged">
+                    <Picker.ItemsSource>
+                        <x:String>Football</x:String>
+                        <x:String>Football</x:String>
+
+                    </Picker.ItemsSource>
+                </Picker>
 
 
 

@@ -2,7 +2,7 @@ namespace ForecastApp;
 
 public partial class HomePage : ContentPage
 {
-    private bool _iplButtonClicked;
+    
 
     public HomePage()
 	{
@@ -16,13 +16,13 @@ public partial class HomePage : ContentPage
 
     async private void LaLigaMatchSelectionButton_Clicked(object sender, EventArgs e)
     {
-        _iplButtonClicked = false;
-        await Navigation.PushAsync(new MatchSelection(_iplButtonClicked));
+        
+        await Navigation.PushAsync(new MatchSelection());
     }
 
     private async void IplMatchSelectionButton_Clicked(object sender, EventArgs e)
     {
-        _iplButtonClicked = true;
-        await Navigation.PushAsync(new MatchSelection(_iplButtonClicked));
+       
+        await Navigation.PushAsync(new Ipl());
     }
 }

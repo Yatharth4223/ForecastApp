@@ -23,9 +23,13 @@
             Text="Choose the league which you want to see forecast of: "/>
 
         <Button
-            x:Name="LaLigaMatchSelectionButton"
-            Text="Click to select La Liga Match"
+
+            x:Name="MatchSelectionButton"
+            Text="LaLiga"
             Clicked="LaLigaMatchSelectionButton_Clicked"
+
+            
+
             />
         <Button
             x:Name="IplMatchSelectionButton"

@@ -5,20 +5,12 @@ namespace ForecastApp;
 public partial class MatchSelection : ContentPage
 {
     
-	public MatchSelection(bool isChecked)
+	public MatchSelection()
 	{
 		InitializeComponent();
-        if (isChecked)
-        {
-            //TeamsListView.ItemsSource = TeamRepository.GetTeams();
-            TeamsListView.ItemsSource = IplRepository.GetTeams();
-        }
-        else 
-        {
-            TeamsListView.ItemsSource = TeamRepository.GetTeams();
-        }
-
-    }
+        TeamsListView.ItemsSource = TeamRepository.GetTeams();
+        
+	}
 
     private void SearchName_TextChanged(object sender, TextChangedEventArgs e)
     {
@@ -27,6 +19,7 @@ public partial class MatchSelection : ContentPage
 
     private void TeamsListView_ItemTapped(object sender, ItemTappedEventArgs e)
     {
-        var selectedMatch = TeamsListView.SelectedItem as Team;
+        var selectedMatch = TeamsListView.SelectedItem as MatchSelection;
+        
     }
 }
