@@ -4,10 +4,10 @@ namespace ForecastApp;
 public partial class StatsPage : ContentPage
 {
     private MatchData _matchData;
-	public StatsPage()
-	{
-		InitializeComponent();
-        _matchData= new MatchData();
+    public StatsPage(MatchSelection matchSelection)
+    {
+        InitializeComponent();
+        _matchData = new MatchData();
         FirstStatsLabel.Text = $"The probability of the first team to win is: {FindProbabilityOverPopulation()}";
         SecondStatsLabel.Text = $"The probability of the second team to win is: {1 - FindProbabilityOverPopulation()}";
     }
@@ -18,7 +18,7 @@ public partial class StatsPage : ContentPage
         // C(100,1) is 100 therefore formula is 100* p(99) * q(1)
         double p = GetWinProbabilityForOneMatch();
         double q = 1 - p;
-        double winProbability = Math.Round(100 * Math.Pow(p, 99) * q,2);
+        double winProbability = Math.Round(100 * Math.Pow(p, 99) * q, 2);
         //where n is total number of values, r is one(because we need winning condition in next match only), p is calculated from above table and q is 1-p
         return winProbability;
     }
@@ -35,4 +35,5 @@ public partial class StatsPage : ContentPage
         }
         return totalWins / 10;
     }
+}
 
