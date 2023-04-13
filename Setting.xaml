@@ -56,13 +56,21 @@
                     FontAttributes="Bold"
                     FontSize="20"/>
 
-                <Picker x:Name="FavoritePicker" SelectedIndexChanged="FavoritePicker_SelectedIndexChanged">
+                <Picker x:Name="FavoritePicker" 
+                        Title="Select your fovorite sport"
+                        HorizontalOptions="Center"
+                        SelectedIndexChanged="FavoritePicker_SelectedIndexChanged">
                     <Picker.ItemsSource>
-                        <x:String>Football</x:String>
-                        <x:String>Football</x:String>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Football</x:String>
+                            <x:String>Cricket</x:String>
+                            <x:String>Basketball</x:String>
 
+                        </x:Array>
                     </Picker.ItemsSource>
                 </Picker>
+
+
 
 
 
