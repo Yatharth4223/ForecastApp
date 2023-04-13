@@ -8,13 +8,13 @@ namespace ForecastApp.Models
 {
     public static class IplRepository
     {
-        public static List<Ipl> _iplMatches;
+        public static List<Team> _iplMatches;
 
         static IplRepository()
         {
-            _iplMatches = new List<Ipl>
+            _iplMatches = new List<Team>
             {
-                new Ipl()
+                new Team()
                 {
                     HomeTeam= "CSK",
                     Opponent= "GT",
@@ -22,7 +22,7 @@ namespace ForecastApp.Models
                     OpponentLogo="https://ssl.gstatic.com/onebox/media/sports/logos/24uPDj4LAP1wpSEGHZWRDQ_48x48.png",
                     MatchTime= "Fri, Mar 31, 3:00 p.m."
                 },
-                new Ipl()
+                new Team()
                 {
                     HomeTeam="PBKS",
                     Opponent="KKR",
@@ -30,7 +30,7 @@ namespace ForecastApp.Models
                     OpponentLogo="https://ssl.gstatic.com/onebox/media/sports/logos/kkwGQB9t8WtGPx9WuiBGOw_48x48.png",
                     MatchTime= "Sat, April 1, 8:00 a.m."
                 },
-                new Ipl()
+                new Team()
                 {
                     HomeTeam="LSG",
                     Opponent="DC",
@@ -38,7 +38,7 @@ namespace ForecastApp.Models
                     OpponentLogo="https://ssl.gstatic.com/onebox/media/sports/logos/TjudW-BaNE2HcD_6cOWC7Q_48x48.png",
                     MatchTime= "Sat, April 1, 10:15 a.m."
                 },
-                new Ipl()
+                new Team()
                 {
                     HomeTeam="RR",
                     Opponent="SRH",
@@ -46,7 +46,7 @@ namespace ForecastApp.Models
                     OpponentLogo="https://ssl.gstatic.com/onebox/media/sports/logos/G9q07ZXPVbPkXOagStz3Yw_48x48.png",
                     MatchTime= "Sun, April 2, 12:30 p.m."
                 },
-                new Ipl()
+                new Team()
                 {
                     HomeTeam="MI",
                     Opponent="RCB",
@@ -54,7 +54,7 @@ namespace ForecastApp.Models
                     OpponentLogo="https://ssl.gstatic.com/onebox/media/sports/logos/f958HPOsI1ugsHmwc4piCw_48x48.png",
                     MatchTime= "Sun, April 2, 3:00 p.m."
                 },
-                new Ipl()
+                new Team()
                 {
                     HomeTeam="CSK",
                     Opponent="LSG",
@@ -62,7 +62,7 @@ namespace ForecastApp.Models
                     OpponentLogo="https://ssl.gstatic.com/onebox/media/sports/logos/b6uyRF-RX56muhQOv1-Z3A_48x48.png",
                     MatchTime= "Mon, April 3, 8:00 a.m."
                 },
-                new Ipl()
+                new Team()
                 {
                     HomeTeam="DC",
                     Opponent="GT",
@@ -70,7 +70,7 @@ namespace ForecastApp.Models
                     OpponentLogo="https://ssl.gstatic.com/onebox/media/sports/logos/24uPDj4LAP1wpSEGHZWRDQ_48x48.png",
                     MatchTime= "Tue, April 4, 10:15 a.m."
                 },
-                new Ipl()
+                new Team()
                 {
                     HomeTeam="RR",
                     Opponent="PBKS",
@@ -78,7 +78,7 @@ namespace ForecastApp.Models
                     OpponentLogo="https://ssl.gstatic.com/onebox/media/sports/logos/HxbhoKfAgDZogey6S9E4bA_48x48.png",
                     MatchTime= "Wed, April 5, 10:00 a.m."
                 },
-                new Ipl()
+                new Team()
                 {
                     HomeTeam="KKR",
                     Opponent="RCB",
@@ -86,7 +86,7 @@ namespace ForecastApp.Models
                     OpponentLogo="https://ssl.gstatic.com/onebox/media/sports/logos/f958HPOsI1ugsHmwc4piCw_48x48.png",
                     MatchTime= "Thu, April 6, 10:00 a.m."
                 },
-                new Ipl()
+                new Team()
                 {
                     HomeTeam="LSG",
                     Opponent="SRH",
@@ -94,7 +94,7 @@ namespace ForecastApp.Models
                     OpponentLogo="https://ssl.gstatic.com/onebox/media/sports/logos/G9q07ZXPVbPkXOagStz3Yw_48x48.png",
                     MatchTime= "Fri, April 7, 10:00 a.m."
                 },
-                new Ipl()
+                new Team()
                 {
                     HomeTeam="RR",
                     Opponent="DC",
@@ -102,7 +102,7 @@ namespace ForecastApp.Models
                     OpponentLogo="https://ssl.gstatic.com/onebox/media/sports/logos/TjudW-BaNE2HcD_6cOWC7Q_48x48.png",
                     MatchTime= "Sat, April 8, 6:00 a.m."
                 },
-                new Ipl()
+                new Team()
                 {
                     HomeTeam="MI",
                     Opponent="CSK",
@@ -110,7 +110,7 @@ namespace ForecastApp.Models
                     OpponentLogo="https://ssl.gstatic.com/onebox/media/sports/logos/exZiFUT_GXScTyr358t7SQ_48x48.png",
                     MatchTime= "Sat, April 8, 10:00 a.m."
                 },
-                new Ipl()
+                new Team()
                 {
                     HomeTeam="GT",
                     Opponent="KKR",
@@ -118,7 +118,7 @@ namespace ForecastApp.Models
                     OpponentLogo="https://ssl.gstatic.com/onebox/media/sports/logos/kkwGQB9t8WtGPx9WuiBGOw_48x48.png",
                     MatchTime= "Sun, April 9, 6:00 a.m."
                 },
-                new Ipl()
+                new Team()
                 {
                     HomeTeam="SRH",
                     Opponent="PBKS",
@@ -126,7 +126,7 @@ namespace ForecastApp.Models
                     OpponentLogo="https://ssl.gstatic.com/onebox/media/sports/logos/HxbhoKfAgDZogey6S9E4bA_48x48.png",
                     MatchTime= "Sun, April 9, 10:00 a.m."
                 },
-                new Ipl()
+                new Team()
                 {
                     HomeTeam="RCB",
                     Opponent="LSG",
@@ -134,7 +134,7 @@ namespace ForecastApp.Models
                     OpponentLogo="https://ssl.gstatic.com/onebox/media/sports/logos/b6uyRF-RX56muhQOv1-Z3A_48x48.png",
                     MatchTime= "Mon, April 10, 10:00 a.m."
                 },
-                new Ipl()
+                new Team()
                 {
                     HomeTeam="DC",
                     Opponent="MI",
@@ -142,7 +142,7 @@ namespace ForecastApp.Models
                     OpponentLogo="https://ssl.gstatic.com/onebox/media/sports/logos/JTre94vh6WJeLmIL-Dfc1g_48x48.png",
                     MatchTime= "Tue, April 11, 10:00 a.m."
                 },
-                new Ipl()
+                new Team()
                 {
                     HomeTeam="CSK",
                     Opponent="RR",
@@ -150,7 +150,7 @@ namespace ForecastApp.Models
                     OpponentLogo="https://ssl.gstatic.com/onebox/media/sports/logos/turpQqyPRIMvuksLiSDSjQ_48x48.png",
                     MatchTime= "Wed, April 12, 10:00 a.m."
                 },
-                new Ipl()
+                new Team()
                 {
                     HomeTeam="PBKS",
                     Opponent="GT",
@@ -158,7 +158,7 @@ namespace ForecastApp.Models
                     OpponentLogo="https://ssl.gstatic.com/onebox/media/sports/logos/24uPDj4LAP1wpSEGHZWRDQ_48x48.png",
                     MatchTime= "Thu, April 13, 10:00 a.m."
                 },
-                new Ipl()
+                new Team()
                 {
                     HomeTeam="KKR",
                     Opponent="SRH",
@@ -166,7 +166,7 @@ namespace ForecastApp.Models
                     OpponentLogo="https://ssl.gstatic.com/onebox/media/sports/logos/G9q07ZXPVbPkXOagStz3Yw_48x48.png",
                     MatchTime= "Fri, April 14, 10:00 a.m."
                 },
-                new Ipl()
+                new Team()
                 {
                     HomeTeam="LSG",
                     Opponent="PBKS",
@@ -174,7 +174,7 @@ namespace ForecastApp.Models
                     OpponentLogo="https://ssl.gstatic.com/onebox/media/sports/logos/HxbhoKfAgDZogey6S9E4bA_48x48.png",
                     MatchTime= "Sat, April 15, 10:00 a.m."
                 },
-                new Ipl()
+                new Team()
                 {
                     HomeTeam="MI",
                     Opponent="KKR",
@@ -182,7 +182,7 @@ namespace ForecastApp.Models
                     OpponentLogo="https://ssl.gstatic.com/onebox/media/sports/logos/kkwGQB9t8WtGPx9WuiBGOw_48x48.png",
                     MatchTime= "Sun, April 16, 6:00 a.m."
                 },
-                new Ipl()
+                new Team()
                 {
                     HomeTeam="GT",
                     Opponent="RR",
@@ -190,7 +190,7 @@ namespace ForecastApp.Models
                     OpponentLogo="https://ssl.gstatic.com/onebox/media/sports/logos/turpQqyPRIMvuksLiSDSjQ_48x48.png",
                     MatchTime= "Sun, April 16, 10:00 a.m."
                 },
-                new Ipl()
+                new Team()
                 {
                     HomeTeam="RCB",
                     Opponent="CSK",
@@ -198,7 +198,7 @@ namespace ForecastApp.Models
                     OpponentLogo="https://ssl.gstatic.com/onebox/media/sports/logos/exZiFUT_GXScTyr358t7SQ_48x48.png",
                     MatchTime= "Mon, April 17, 10:00 a.m."
                 },
-                new Ipl()
+                new Team()
                 {
                     HomeTeam="SRH",
                     Opponent="MI",
@@ -206,7 +206,7 @@ namespace ForecastApp.Models
                     OpponentLogo="https://ssl.gstatic.com/onebox/media/sports/logos/JTre94vh6WJeLmIL-Dfc1g_48x48.png",
                     MatchTime= "Tue, April 18, 10:00 a.m."
                 },
-                new Ipl()
+                new Team()
                 {
                     HomeTeam="RR",
                     Opponent="LSG",
@@ -214,7 +214,7 @@ namespace ForecastApp.Models
                     OpponentLogo="https://ssl.gstatic.com/onebox/media/sports/logos/b6uyRF-RX56muhQOv1-Z3A_48x48.png",
                     MatchTime= "Wed, April 19, 10:00 a.m."
                 },
-                new Ipl()
+                new Team()
                 {
                     HomeTeam="PBKS",
                     Opponent="RCB",
@@ -222,7 +222,7 @@ namespace ForecastApp.Models
                     OpponentLogo="https://ssl.gstatic.com/onebox/media/sports/logos/f958HPOsI1ugsHmwc4piCw_48x48.png",
                     MatchTime= "Thu, April 20, 6:00 a.m."
                 },
-                new Ipl()
+                new Team()
                 {
                     HomeTeam="DC",
                     Opponent="KKR",
@@ -230,7 +230,7 @@ namespace ForecastApp.Models
                     OpponentLogo="https://ssl.gstatic.com/onebox/media/sports/logos/kkwGQB9t8WtGPx9WuiBGOw_48x48.png",
                     MatchTime= "Thu, April 20, 10:00 a.m."
                 },
-                new Ipl()
+                new Team()
                 {
                     HomeTeam="CSK",
                     Opponent="SRH",
@@ -238,7 +238,7 @@ namespace ForecastApp.Models
                     OpponentLogo="https://ssl.gstatic.com/onebox/media/sports/logos/G9q07ZXPVbPkXOagStz3Yw_48x48.png",
                     MatchTime= "Fri, April 21, 10:00 a.m."
                 },
-                new Ipl()
+                new Team()
                 {
                     HomeTeam="LSG",
                     Opponent="GT",
@@ -246,7 +246,7 @@ namespace ForecastApp.Models
                     OpponentLogo="https://ssl.gstatic.com/onebox/media/sports/logos/24uPDj4LAP1wpSEGHZWRDQ_48x48.png",
                     MatchTime= "Sat, April 22, 6:00 a.m."
                 },
-                new Ipl()
+                new Team()
                 {
                     HomeTeam="MI",
                     Opponent="PBKS",
@@ -260,14 +260,14 @@ namespace ForecastApp.Models
 
 
         }
-        public static List<Ipl> GetTeams()
+        public static List<Team> GetTeams()
         {
             return _iplMatches;
         }
 
-        public static List<Ipl> SelectByName(string name)
+        public static List<Team> SelectByName(string name)
         {
-            var result = new List<Ipl>();
+            var result = new List<Team>();
             foreach (var iplMatch in _iplMatches )
             {
                 if (iplMatch.HomeTeam.ToLower().Contains(name.ToLower()) || iplMatch.Opponent.ToLower().Contains(name.ToLower()))

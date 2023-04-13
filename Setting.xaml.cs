@@ -1,5 +1,5 @@
 
-
+using Microsoft.Maui.Controls;
 namespace ForecastApp;
 
 public partial class Setting : ContentPage
