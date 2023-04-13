@@ -4,12 +4,8 @@ namespace ForecastApp;
 public partial class StatsPage : ContentPage
 {
     private MatchData _matchData;
-<<<<<<< HEAD
-    public StatsPage(MatchSelection matchSelection)
-=======
-    public StatsPage()
->>>>>>> 7955223b21324d893754cad964439c6cd282145d
-    {
+
+    public StatsPage(Team team) { 
         InitializeComponent();
         _matchData = new MatchData();
         FirstStatsLabel.Text = $"The probability of the first team to win is: {FindProbabilityOverPopulation()}";
