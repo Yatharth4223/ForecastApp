@@ -39,13 +39,29 @@ public partial class HomePage : ContentPage
 
     async private void LaLigaMatchSelectionButton_Clicked(object sender, EventArgs e)
     {
+<<<<<<< HEAD
+        await Navigation.PushAsync(new MatchSelection(false));
+=======
         bool isIpl = false;
+<<<<<<< HEAD
         await Navigation.PushAsync(new MatchSelection(isIpl,_darkmode)) ;
+=======
+        await Navigation.PushAsync(new MatchSelection(isIpl)) ;
+>>>>>>> 0418c2b5cb18df06eb12c990ad77202428cd5357
+>>>>>>> 746d8c12b416a6b117d49a30d22eda31b8357fe1
     }
 
     private async void IplMatchSelectionButton_Clicked(object sender, EventArgs e)
     {
+<<<<<<< HEAD
+        await Navigation.PushAsync(new MatchSelection(true));
+=======
         bool isIpl = true;
+<<<<<<< HEAD
         await Navigation.PushAsync(new MatchSelection(isIpl,_darkmode));
+=======
+        await Navigation.PushAsync(new MatchSelection(isIpl));
+>>>>>>> 0418c2b5cb18df06eb12c990ad77202428cd5357
+>>>>>>> 746d8c12b416a6b117d49a30d22eda31b8357fe1
     }
 }

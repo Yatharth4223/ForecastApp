@@ -14,27 +14,27 @@ namespace ForecastApp.Models
         private Random random = new Random();
         public List<bool> MatchOutcomes { get; }
 
-
-
-        //public List<bool> MatchOutcomes { get; }
-
         public MatchData()
         {
             List<bool> outcomes = new List<bool> { true, false };
-            MatchOutcomes = new List<bool>()
+            MatchOutcomes = new List<bool>();
+            //    outcomes[random.Next(0, outcomes.Count)],
+            //    outcomes[random.Next(0, outcomes.Count)],
+            //    outcomes[random.Next(0, outcomes.Count)],
+            //    outcomes[random.Next(0, outcomes.Count)],
+            //    outcomes[random.Next(0, outcomes.Count)],
+            //    outcomes[random.Next(0, outcomes.Count)],
+            //    outcomes[random.Next(0, outcomes.Count)],
+            //    outcomes[random.Next(0, outcomes.Count)],
+            //    outcomes[random.Next(0, outcomes.Count)],
+            //    outcomes[random.Next(0, outcomes.Count)],
+            //};
+            
+            //Added 100 values for match data
+            for(int i = 0; i < 100; i++)
             {
-                //todo: generate true or false randomly 10 times;
-                outcomes[random.Next(0, outcomes.Count)],
-                outcomes[random.Next(0, outcomes.Count)],
-                outcomes[random.Next(0, outcomes.Count)],
-                outcomes[random.Next(0, outcomes.Count)],
-                outcomes[random.Next(0, outcomes.Count)],
-                outcomes[random.Next(0, outcomes.Count)],
-                outcomes[random.Next(0, outcomes.Count)],
-                outcomes[random.Next(0, outcomes.Count)],
-                outcomes[random.Next(0, outcomes.Count)],
-                outcomes[random.Next(0, outcomes.Count)],
-            };
+                MatchOutcomes.Add(outcomes[random.Next(0, outcomes.Count)]);
+            }
         }
 
         
