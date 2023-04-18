@@ -2,9 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ForecastApp.Setting"
-             Title="Setting">
+             Title="Setting"
+             BackgroundColor="{DynamicResource PageBackGroundColor}">
     
-    <Grid>
+    <Grid BackgroundColor="{DynamicResource PrimaryColor}">
 
         <Grid.RowDefinitions>
             <RowDefinition />
@@ -20,12 +21,13 @@
                Grid.ColumnSpan="2"
                FontAttributes="Bold"
                FontSize="50"
-               TextColor="Blue"
+               
+               TextColor="{DynamicResource PrimaryTextColor}"
                HorizontalTextAlignment="Center"
                />
         <Frame
            
-            BackgroundColor="LightBlue"
+            BackgroundColor="{DynamicResource TertiaryColor}"
             Grid.Row="0"
             Grid.Column="0"
             Grid.RowSpan="2" Grid.ColumnSpan="2"
@@ -36,6 +38,7 @@
                 <Label
                 x:Name="AppTheme"
                 Text="Dark Mode"
+                    TextColor="{DynamicResource PrimaryTextColor}"
                 HorizontalTextAlignment="Center"
                 FontAttributes="Bold"
                 FontSize="20"/>
@@ -44,31 +47,43 @@
                     HorizontalOptions="Center"
                     
                     Spacing="40">
-                    <Label Text="Dark Mode"/>
+                    
                     <Switch x:Name="DarkMode"
+                            BindingContext="Light Mode"
+                            HorizontalOptions="Center"
                             Toggled="DarkMode_Toggled"/>
                     
 
                 </HorizontalStackLayout>
                 <Label x:Name="Sport"
                     Text="Sport"
+                       TextColor="{DynamicResource PrimaryTextColor}"
                     HorizontalTextAlignment="Center"
                     FontAttributes="Bold"
                     FontSize="20"/>
+                
 
                 <Picker x:Name="FavoritePicker" 
-                        Title="Select your fovorite sport"
+                        TitleColor="{DynamicResource PrimaryColor}"
+                        Title="Select your fovorite LaLiga team"
                         HorizontalOptions="Center"
-                        SelectedIndexChanged="FavoritePicker_SelectedIndexChanged">
-                    <Picker.ItemsSource>
-                        <x:Array Type="{x:Type x:String}">
-                            <x:String>Football</x:String>
-                            <x:String>Cricket</x:String>
-                            <x:String>Basketball</x:String>
-
-                        </x:Array>
-                    </Picker.ItemsSource>
-                </Picker>
+                        SelectedIndexChanged="FavoritePicker_SelectedIndexChanged"
+                        ItemDisplayBinding="{Binding HomeTeam}"
+                    />
+                <Picker x:Name="FavoriteIplPicker" 
+                        TitleColor="{DynamicResource PrimaryColor}"
+                        Title="Select your fovorite IPL team"
+                        HorizontalOptions="Center"
+                        SelectedIndexChanged="FavoriteIplPicker_SelectedIndexChanged"
+                        ItemDisplayBinding="{Binding HomeTeam}"/>
+                <Button
+                    x:Name="SaveButton"
+                    BackgroundColor="{DynamicResource SecondaryColor}"
+                    TextColor="{DynamicResource SecondaryTextColor}"
+                    Text="Save"
+                    WidthRequest="150"
+                    Clicked="SaveButton_Clicked"
+                    VerticalOptions="CenterAndExpand"/>
 
 
 

@@ -1,31 +1,34 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ForecastApp.MatchSelection"
-             Title="MatchSelection">
+             Title="MatchSelection"
+             >
 
-    <ScrollView>
+    <ScrollView BackgroundColor="{DynamicResource PrimaryColor}">
         <StackLayout
-            BackgroundColor="BlanchedAlmond">
+            BackgroundColor="{DynamicResource PrimaryColor}"
+            >
             <Label 
                 Text="Select The Match"
+                TextColor="{DynamicResource PrimaryTextColor}"
                 FontSize="Header"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
             <Entry
                 x:Name="SearchName"
+                
                 Placeholder="Search Team...."
                 Margin="20"
-                PlaceholderColor="Black"
-                TextColor="Black"
+                PlaceholderColor="{DynamicResource PrimaryTextColor}"
+                TextColor="{DynamicResource PrimaryTextColor}"
                 WidthRequest="700"
                 
                 TextChanged="SearchName_TextChanged"/>
             <ListView 
                 x:Name="TeamsListView"
                 ItemTapped="TeamsListView_ItemTapped"
-                
+                BackgroundColor="{DynamicResource PrimaryColor}"
                 >
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -34,13 +37,26 @@
                                 Orientation="Horizontal" Margin="20">
                                 
                                 <Image Source="{Binding HomeTeamLogo}" HorizontalOptions="StartAndExpand" WidthRequest="120" />
-                                <Label Text="{Binding HomeTeam}" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                                <Label Text="{Binding HomeTeam}" 
+                                       HorizontalOptions="FillAndExpand" 
+                                       VerticalOptions="Center"
+                                       TextColor="{DynamicResource PrimaryTextColor}"/>
                                 <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
-                                    <Label Text="VS" HorizontalOptions="Center"/>
-                                    <Label Text="{Binding MatchTime}" />
+                                    <Label 
+                                        Text="VS" 
+                                        HorizontalOptions="Center"
+                                        TextColor="{DynamicResource PrimaryTextColor}"/>
+                                    
+                                    <Label Text="{Binding MatchTime}"
+                                       TextColor="{DynamicResource PrimaryTextColor}"/>
+                                    
                                 </VerticalStackLayout>
 
-                                <Label Text="{Binding Opponent}" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
+                                <Label Text="{Binding Opponent}" 
+                                       HorizontalOptions="CenterAndExpand" 
+                                       VerticalOptions="Center"
+                                       TextColor="{DynamicResource PrimaryTextColor}"/>
+                                
                                 <Image Source="{Binding OpponentLogo}" HorizontalOptions="EndAndExpand" WidthRequest="120"/>
                                 
                             </StackLayout>
