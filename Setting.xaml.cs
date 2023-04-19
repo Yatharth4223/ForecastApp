@@ -1,21 +1,14 @@
-
 using ForecastApp.Models;
 using ForecastApp.Themes;
-
 
 namespace ForecastApp;
 
 public partial class Setting : ContentPage
 {
-<<<<<<< HEAD
-	public Setting(bool darkMode)
-=======
 	private List<Team> _football;
 	private List<Team> _cricket;
 	bool IsDarkMode;
-
 	public Setting(bool isDarkMode)
->>>>>>> 6f8e67b02661a6bff72fb5976d6747861ed3fae2
 	{
 		InitializeComponent();
         var darkMode = isDarkMode ? true : false;
@@ -25,28 +18,18 @@ public partial class Setting : ContentPage
             mergedDictionaries.Clear();
             Application.Current.Resources.Add(new DarkTheme());
             DarkMode.IsToggled = true;
-            
-
         }
         else
         {
             mergedDictionaries.Clear();
             Application.Current.Resources.Add(new LightTheme());
             DarkMode.IsToggled = false;
-
-
-
         }
-
         LoadSetting();
-		
-        
         var football = TeamRepository.GetTeams();
 		var cricket = IplRepository.GetTeams();
 		FavoritePicker.ItemsSource = football;
 		FavoriteIplPicker.ItemsSource = cricket;
-
-		
 	}
 	
     private void DarkMode_Toggled(object sender, ToggledEventArgs e)
@@ -57,18 +40,13 @@ public partial class Setting : ContentPage
 			mergedDictionaries.Clear();
 			mergedDictionaries.Add(new DarkTheme());
 			IsDarkMode= true;
-			
-			
 		}
 		else
 		{
 			mergedDictionaries.Clear();
 			mergedDictionaries.Add(new LightTheme());
 			IsDarkMode= false;
-			
-            
 		}
-		
     }
 
 	private void LoadSetting()
@@ -79,8 +57,6 @@ public partial class Setting : ContentPage
     private void FavoritePicker_SelectedIndexChanged(object sender, EventArgs e)
     {
 		_football = FavoritePicker.SelectedItem as List<Team>;
-
-
     }
 
     private void FavoriteIplPicker_SelectedIndexChanged(object sender, EventArgs e)
@@ -99,9 +75,7 @@ public partial class Setting : ContentPage
 		{
             Application.Current.Resources.Add(new LightTheme());
 			IsDarkMode= false;
-
         }
-
     }
     
 
@@ -111,6 +85,5 @@ public partial class Setting : ContentPage
 
         await DisplayAlert("Save", "Changes are saved", "OK");
 		await Navigation.PushAsync(new HomePage(darkMode));
-		
     }
 }
