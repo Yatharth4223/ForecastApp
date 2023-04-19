@@ -9,24 +9,12 @@ namespace ForecastApp;
 public partial class HomePage : ContentPage
 {
 
-    private bool _darkmode;
-    public HomePage(bool darkMode)
+    
+    public HomePage()
 	{
 		InitializeComponent();
-        _darkmode = darkMode;
-        ICollection<ResourceDictionary> mergedDictionaries = Application.Current.Resources.MergedDictionaries;
-        if (darkMode == true)
-        {
-            mergedDictionaries.Clear();
-            mergedDictionaries.Add(new DarkTheme());
-            
-
-        }
-        else
-        {
-            mergedDictionaries.Clear();
-            mergedDictionaries.Add(new LightTheme());
-        }
+        
+        
 
     }
 
@@ -34,34 +22,18 @@ public partial class HomePage : ContentPage
     {
         
 
-        await Navigation.PushAsync(new Setting(_darkmode));
+        await Navigation.PushAsync(new Setting());
     }
 
     async private void LaLigaMatchSelectionButton_Clicked(object sender, EventArgs e)
     {
-<<<<<<< HEAD
-        await Navigation.PushAsync(new MatchSelection(false));
-=======
         bool isIpl = false;
-<<<<<<< HEAD
-        await Navigation.PushAsync(new MatchSelection(isIpl,_darkmode)) ;
-=======
         await Navigation.PushAsync(new MatchSelection(isIpl)) ;
->>>>>>> 0418c2b5cb18df06eb12c990ad77202428cd5357
->>>>>>> 746d8c12b416a6b117d49a30d22eda31b8357fe1
     }
 
     private async void IplMatchSelectionButton_Clicked(object sender, EventArgs e)
     {
-<<<<<<< HEAD
-        await Navigation.PushAsync(new MatchSelection(true));
-=======
         bool isIpl = true;
-<<<<<<< HEAD
-        await Navigation.PushAsync(new MatchSelection(isIpl,_darkmode));
-=======
         await Navigation.PushAsync(new MatchSelection(isIpl));
->>>>>>> 0418c2b5cb18df06eb12c990ad77202428cd5357
->>>>>>> 746d8c12b416a6b117d49a30d22eda31b8357fe1
     }
 }
