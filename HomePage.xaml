@@ -27,9 +27,6 @@
             x:Name="MatchSelectionButton"
             Text="LaLiga"
             Clicked="LaLigaMatchSelectionButton_Clicked"
-
-            
-
             />
         <Button
             x:Name="IplMatchSelectionButton"

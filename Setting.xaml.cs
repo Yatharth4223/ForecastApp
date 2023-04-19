@@ -7,11 +7,15 @@ namespace ForecastApp;
 
 public partial class Setting : ContentPage
 {
+<<<<<<< HEAD
+	public Setting(bool darkMode)
+=======
 	private List<Team> _football;
 	private List<Team> _cricket;
 	bool IsDarkMode;
 
 	public Setting(bool isDarkMode)
+>>>>>>> 6f8e67b02661a6bff72fb5976d6747861ed3fae2
 	{
 		InitializeComponent();
         var darkMode = isDarkMode ? true : false;
