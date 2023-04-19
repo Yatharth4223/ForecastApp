@@ -4,7 +4,7 @@ namespace ForecastApp;
 
 public partial class Setting : ContentPage
 {
-	public Setting()
+	public Setting(bool darkMode)
 	{
 		InitializeComponent();
 		LoadSetting();
