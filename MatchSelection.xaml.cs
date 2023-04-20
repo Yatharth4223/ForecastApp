@@ -10,15 +10,21 @@ public partial class MatchSelection : ContentPage
     private bool _darkMode;
 
     public static bool isToggled = false;
-	public MatchSelection(bool isIPL,bool darkMode)
-	{
-		InitializeComponent();
+    public MatchSelection(bool isIPL, bool darkMode)
+    {
+        InitializeComponent();
         _isIpl = isIPL;
         if (_isIpl == true)
         {
             TeamsListView.ItemsSource = IplRepository.GetTeams();
         }
+<<<<<<< HEAD
+
         
+
+=======
+        
+>>>>>>> b216b6bba9287f17a737968e1feeeccce37fc429
         else
         {
             TeamsListView.ItemsSource = TeamRepository.GetTeams();
@@ -60,6 +66,12 @@ public partial class MatchSelection : ContentPage
     private void TeamsListView_ItemTapped(object sender, ItemTappedEventArgs e)
     {
         var selectedMatchVaribale = TeamsListView.SelectedItem as Team;
+<<<<<<< HEAD
+
+
+
+=======
+>>>>>>> b216b6bba9287f17a737968e1feeeccce37fc429
         Navigation.PushAsync(new StatsPage(selectedMatchVaribale));
         
 

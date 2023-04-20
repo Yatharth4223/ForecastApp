@@ -4,18 +4,17 @@
              x:Class="ForecastApp.HomePage"
              Title="HomePage">
     <VerticalStackLayout
-        BackgroundColor="{DynamicResource PrimaryColor}">
+        >
         <Label 
             Text="Welcome to The Home Page of our Forecasting app"
             VerticalOptions="Center" 
             HorizontalOptions="Center"
             FontSize="30"
             Padding="30"
-            TextColor="{DynamicResource SecondaryColor}"/>
+            />
 
         <Button
             x:Name="SettingsButton"
-            BackgroundColor="{DynamicResource TertiaryColor}"
             Text="Settings Button"
             Clicked="SettingsButton_Clicked"
             />
