@@ -7,9 +7,6 @@ namespace ForecastApp;
 
 public partial class Setting : ContentPage
 {
-
-	
-
 	private List<Team> _football;
 	private List<Team> _cricket;
 	bool IsDarkMode;

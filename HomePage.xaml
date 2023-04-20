@@ -3,7 +3,38 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ForecastApp.HomePage"
              Title="HomePage">
-    <VerticalStackLayout
+    <Grid>
+        <Label 
+            Text="Welcome to The Home Page of our Forecasting app"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="30"
+            Padding="30"
+            />
+
+        <Button
+            x:Name="SettingsButton"
+            Text="Settings Button"
+            Clicked="SettingsButton_Clicked"
+            Grid.Row="1"
+            />
+
+        <Label
+            Text="Choose the league which you want to see forecast of: "/>
+
+        <Button
+
+            x:Name="MatchSelectionButton"
+            Text="LaLiga"
+            Clicked="LaLigaMatchSelectionButton_Clicked"
+            />
+        <Button
+            x:Name="IplMatchSelectionButton"
+            Text="Click to select IPL Matches"
+            Clicked="IplMatchSelectionButton_Clicked"
+            />
+    </Grid>
+    <!--<VerticalStackLayout
         >
         <Label 
             Text="Welcome to The Home Page of our Forecasting app"
@@ -34,5 +65,5 @@
             Clicked="IplMatchSelectionButton_Clicked"
             />
         
-    </VerticalStackLayout>
+    </VerticalStackLayout>-->
 </ContentPage>
