@@ -16,28 +16,21 @@ namespace ForecastApp.Models
 
         public MatchData()
         {
-            List<bool> outcomes = new List<bool> { true, false };
-            MatchOutcomes = new List<bool>();
-            //    outcomes[random.Next(0, outcomes.Count)],
-            //    outcomes[random.Next(0, outcomes.Count)],
-            //    outcomes[random.Next(0, outcomes.Count)],
-            //    outcomes[random.Next(0, outcomes.Count)],
-            //    outcomes[random.Next(0, outcomes.Count)],
-            //    outcomes[random.Next(0, outcomes.Count)],
-            //    outcomes[random.Next(0, outcomes.Count)],
-            //    outcomes[random.Next(0, outcomes.Count)],
-            //    outcomes[random.Next(0, outcomes.Count)],
-            //    outcomes[random.Next(0, outcomes.Count)],
-            //};
-            
-            //Added 100 values for match data
-            for(int i = 0; i < 100; i++)
-            {
-                MatchOutcomes.Add(outcomes[random.Next(0, outcomes.Count)]);
-            }
+            MatchOutcomes = new List<bool>();            
         }
 
+        public async void PopulateMatchOutcomes()
+        {
+            List<bool> outcomes = new List<bool> { true, false };
+
+            //Added 100 values for match data
+            for (int i = 0; i < 100; i++)
+            {
+                MatchOutcomes.Add(outcomes[random.Next(0, 2)]);
+            }
+        }
         
+
     }
 }
 

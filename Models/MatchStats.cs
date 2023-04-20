@@ -13,6 +13,7 @@ namespace ForecastApp.Models
         public MatchStats() 
         {
             _matchData = new MatchData();
+            _matchData.PopulateMatchOutcomes();
         }
         public double FindProbabilityOverPopulation()
         {
@@ -25,7 +26,7 @@ namespace ForecastApp.Models
             return winProbability;
         }
         
-        private decimal GetWinProbabilityForOneMatch()
+        private double GetWinProbabilityForOneMatch()
         {
             int totalWins = 0;
             foreach (bool b in _matchData.MatchOutcomes)
