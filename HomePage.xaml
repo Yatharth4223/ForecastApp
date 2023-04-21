@@ -2,7 +2,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ForecastApp.HomePage"
-             Title="HomePage">
+             Title="HomePage"
+             BackgroundColor="{DynamicResource PrimaryColor }"
+             >
     <Grid HorizontalOptions="Center" >
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -23,6 +25,7 @@
             Grid.Column="1"
             WidthRequest="50"
             Grid.RowSpan="1"
+            BackgroundColor="{DynamicResource PrimaryColor}"
             />
         <VerticalStackLayout Grid.Row="1">
             <Label 
@@ -48,6 +51,8 @@
                     Clicked="LaLigaMatchSelectionButton_Clicked"
                     WidthRequest="70"
                     HeightRequest="70"
+                    BackgroundColor="{DynamicResource PrimaryColor}"
+                    
                 />
                 <ImageButton
                     Source="ipl.png" 
@@ -56,43 +61,13 @@
                     HorizontalOptions="Center"
                     WidthRequest="70"
                     HeightRequest="70"
+                    BackgroundColor="{DynamicResource PrimaryColor}"
+                    
                 />
             </HorizontalStackLayout>
 
 
         </VerticalStackLayout>
-        
+
     </Grid>
-    <!--<VerticalStackLayout
-        >
-        <Label 
-            Text="Welcome to The Home Page of our Forecasting app"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center"
-            FontSize="30"
-            Padding="30"
-            />
-
-        <Button
-            x:Name="SettingsButton"
-            Text="Settings Button"
-            Clicked="SettingsButton_Clicked"
-            />
-
-        <Label
-            Text="Choose the league which you want to see forecast of: "/>
-
-        <Button
-
-            x:Name="MatchSelectionButton"
-            Text="LaLiga"
-            Clicked="LaLigaMatchSelectionButton_Clicked"
-            />
-        <Button
-            x:Name="IplMatchSelectionButton"
-            Text="Click to select IPL Matches"
-            Clicked="IplMatchSelectionButton_Clicked"
-            />
-        
-    </VerticalStackLayout>-->
 </ContentPage>

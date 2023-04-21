@@ -1,7 +1,4 @@
-
-
 using ForecastApp.Themes;
-
 namespace ForecastApp;
 
 public partial class HomePage : ContentPage
@@ -9,22 +6,20 @@ public partial class HomePage : ContentPage
 
     private bool _darkmode;
     public HomePage(bool darkMode)
-
 	{
-		InitializeComponent();
-        //var grid = new Grid
-        //{
-        //    Children =
-        //        {
-        //            new Image
-        //            {
-        //                Source = "soccerplayersactionprofessionalstadiumcopy.png",
-        //                Aspect = Aspect.AspectFill,
-        //                Opacity = 0.5
-        //            }
-        //        }
-        //};
-        //Content = grid;
+        InitializeComponent();
+        _darkmode = darkMode;
+        ICollection<ResourceDictionary> mergedDictionaries = Application.Current.Resources.MergedDictionaries;
+        if (_darkmode== true)
+        {
+            mergedDictionaries.Clear();
+            mergedDictionaries.Add(new DarkTheme());
+        }
+        else
+        {
+            mergedDictionaries.Clear();
+            mergedDictionaries.Add(new LightTheme());
+        }
     }
 
     async private void SettingsButton_Clicked(object sender, EventArgs e)
