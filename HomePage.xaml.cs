@@ -15,6 +15,19 @@ public partial class HomePage : ContentPage
 
 	{
 		InitializeComponent();
+        //var grid = new Grid
+        //{
+        //    Children =
+        //        {
+        //            new Image
+        //            {
+        //                Source = "soccerplayersactionprofessionalstadiumcopy.png",
+        //                Aspect = Aspect.AspectFill,
+        //                Opacity = 0.5
+        //            }
+        //        }
+        //};
+        //Content = grid;
     }
 
     async private void SettingsButton_Clicked(object sender, EventArgs e)
@@ -35,9 +48,7 @@ public partial class HomePage : ContentPage
         bool isIpl = true;
 
 
-        await Navigation.PushAsync(new MatchSelection(isIpl,_darkmode));
-
-        
+        await Navigation.PushAsync(new MatchSelection(isIpl,_darkmode));      
 
     }
 }
