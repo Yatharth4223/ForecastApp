@@ -13,34 +13,46 @@ namespace ForecastApp.Models
         public MatchStats() 
         {
             _matchData = new MatchData();
-            _matchData.PopulateMatchOutcomes();
+            PopulateMatchOutcomes();
         }
-        public double FindProbabilityOverPopulation()
+        public double GetProbabilityOverPopulation()
         {
             //formula used probability = C(n,r) * p^(n-r) * q^r
-            // C(100,1) is 100 therefore formula is 100* p(99) * q(1)
-            double p = (double) GetWinProbabilityForOneMatch();
-            double q = 1 - p;
-            double winProbability = Math.Round(100 * Math.Pow(p, 99) * q,8);
+            // C(10,1) is 10 therefore formula is 10* p(9) * q(1)
+            double p = GetWinProbabilityForOneMatch();
+            //double q = 1 - p;
+            //double winProbability = 100 * Math.Pow(p, 9) * q;
             //where n is total number of values, r is one(because we need winning condition in next match only), p is calculated from above table and q is 1-p
-            return winProbability;
+            return p;
         }
         
-        private double GetWinProbabilityForOneMatch()
+        public double GetWinProbabilityForOneMatch()
         {
             int totalWins = 0;
-            foreach (bool b in _matchData.MatchOutcomes)
+            foreach (bool b in _matchData._matchOutcomes)
             {
                 if (b == true)
                 {
                     totalWins += 1;
                 }
             }
-            //because total matches were 100
-            decimal probability = totalWins / 100;
-            return Math.Round(probability, 8);
+            //because total matches were 10
+            return (double)totalWins / 10;
+            
+        }
+
+
+        public void PopulateMatchOutcomes()
+        {
+            List<bool> outcomes = new List<bool> { true, false };
+            for(int i=0;i<10;i++)
+            {
+                _matchData._matchOutcomes.Add(outcomes[new Random().Next(0,2)]);
+            }
+                
         }
     }
+
 
 
 }

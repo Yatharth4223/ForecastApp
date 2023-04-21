@@ -12,16 +12,12 @@ public partial class HomePage : ContentPage
 
 	{
 		InitializeComponent();
-        
-        
-
     }
 
     async private void SettingsButton_Clicked(object sender, EventArgs e)
 
     {   
-        await Navigation.PushAsync(new Setting(_darkMode));
-
+        await Navigation.PushAsync(new Setting(_darkmode));
     }
 
     async private void LaLigaMatchSelectionButton_Clicked(object sender, EventArgs e)
@@ -29,9 +25,6 @@ public partial class HomePage : ContentPage
         bool isIpl = false;
 
         await Navigation.PushAsync(new MatchSelection(isIpl,_darkmode)) ;
-
-        
-
     }
 
     private async void IplMatchSelectionButton_Clicked(object sender, EventArgs e)

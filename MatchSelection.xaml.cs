@@ -63,6 +63,5 @@ public partial class MatchSelection : ContentPage
 
         Navigation.PushAsync(new StatsPage(selectedMatchVaribale));
         
-
     }
 }

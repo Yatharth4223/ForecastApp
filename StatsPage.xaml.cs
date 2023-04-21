@@ -9,8 +9,10 @@ public partial class StatsPage : ContentPage
     { 
         InitializeComponent();
         _matchStats = new MatchStats();
-        FirstStatsLabel.Text = $"The probability of the {team.HomeTeam} team to win is: {_matchStats.FindProbabilityOverPopulation() * 100}%";
-        SecondStatsLabel.Text = $"The probability of the {team.Opponent} team to win is: {1 - _matchStats.FindProbabilityOverPopulation() * 100}%";
+        double winpercentage= _matchStats.GetProbabilityOverPopulation() * 100;
+        FirstStatsLabel.Text = $"The probability of the {team.HomeTeam} team to win is: {winpercentage}%";
+        SecondStatsLabel.Text = $"The probability of the {team.Opponent} team to win is:{100 - winpercentage}%";
+
     }
 
 }
