@@ -2,17 +2,29 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ForecastApp.StatsPage"
-             Title="StatsPage">
-    <VerticalStackLayout>
-        <Label 
-            x:Name="FirstStatsLabel"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+             Title="StatsPage"
+             BackgroundColor="{DynamicResource PrimaryColor}">
+    <Grid VerticalOptions="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
 
-        <Label 
-            x:Name="SecondStatsLabel"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Image x:Name="Team1Logo" WidthRequest="100"/>
+        <Image x:Name="Team2Logo" Grid.Column="2" WidthRequest="100"/>
+        <Image x:Name="Team1StatsImage" Grid.Row="2" WidthRequest="100"/>
+        <Image x:Name="Team2StatsImage" Grid.Row="2" Grid.Column="2" WidthRequest="100"/>
+        
+            
+        <ListView x:Name="Team1List" Grid.Row="3" HorizontalOptions="Center" BackgroundColor="{DynamicResource PrimaryTextColor}"/>
+        <Button x:Name="BidButton"  BackgroundColor="{DynamicResource SecondaryColor}" Text="Do you want to see which team to bid?" Clicked="BidButton_Clicked" WidthRequest="300" HeightRequest="40" HorizontalOptions="Center" VerticalOptions="End" Grid.Row="4" Grid.Column="2"/>
 
-    </VerticalStackLayout>
+
+    </Grid>
 </ContentPage>

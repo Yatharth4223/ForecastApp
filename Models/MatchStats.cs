@@ -37,8 +37,7 @@ namespace ForecastApp.Models
                 }
             }
             //because total matches were 10
-            return (double)totalWins / 10;
-            
+            return (double)totalWins / 10;  
         }
 
 
@@ -48,9 +47,14 @@ namespace ForecastApp.Models
             for(int i=0;i<10;i++)
             {
                 _matchData._matchOutcomes.Add(outcomes[new Random().Next(0,2)]);
-            }
-                
+            }        
         }
+
+        public List<bool> GetMatches()
+        {
+            return _matchData._matchOutcomes;
+        }
+       
     }
 
 

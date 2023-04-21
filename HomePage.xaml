@@ -16,7 +16,7 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Image Source="soccerplayersactionprofessionalstadiumcopy.png" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" VerticalOptions="FillAndExpand" Aspect="AspectFill" IsVisible="true" HeightRequest="650"/>
+        <!--<Image Source="soccerplayersactionprofessionalstadiumcopy.png" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" VerticalOptions="FillAndExpand" Aspect="AspectFill" IsVisible="true" HeightRequest="650"/>-->
         <ImageButton
             x:Name="SettingsButton"
             Source="setting.png"
@@ -35,6 +35,8 @@
             Padding="30"
             Grid.Row="1"
             VerticalOptions="Center"
+            TextColor="{DynamicResource PrimaryTextColor}"
+              
             />
 
             <Label
@@ -43,15 +45,18 @@
             FontSize="Medium"
             Grid.Row="2"
             Padding="40"
+            TextColor="{DynamicResource PrimaryTextColor}"
             />
             <HorizontalStackLayout Grid.Row="3" HorizontalOptions="Center" Padding="50">
                 <ImageButton
                     Source="laliga.png"
                     x:Name="MatchSelectionButton"
                     Clicked="LaLigaMatchSelectionButton_Clicked"
-                    WidthRequest="70"
-                    HeightRequest="70"
+                    WidthRequest="300"
+                    HeightRequest="100"
                     BackgroundColor="{DynamicResource PrimaryColor}"
+                    BorderColor="{DynamicResource SecondaryColor}"
+                    BorderWidth="100"
                     
                 />
                 <ImageButton
@@ -59,10 +64,11 @@
                     x:Name="IplMatchSelectionButton"
                     Clicked="IplMatchSelectionButton_Clicked"
                     HorizontalOptions="Center"
-                    WidthRequest="70"
-                    HeightRequest="70"
+                    WidthRequest="300"
+                    HeightRequest="100"
                     BackgroundColor="{DynamicResource PrimaryColor}"
-                    
+                    BorderColor="{DynamicResource SecondaryColor}"
+
                 />
             </HorizontalStackLayout>
 
