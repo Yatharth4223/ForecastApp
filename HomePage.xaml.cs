@@ -7,9 +7,6 @@ namespace ForecastApp;
 public partial class HomePage : ContentPage
 {
 
-
-    
-
     private bool _darkmode;
     public HomePage(bool darkMode)
 

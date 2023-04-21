@@ -18,7 +18,7 @@ public partial class MatchSelection : ContentPage
         {
             TeamsListView.ItemsSource = IplRepository.GetTeams();
         }
-        
+
         else
         {
             TeamsListView.ItemsSource = TeamRepository.GetTeams();
@@ -60,6 +60,7 @@ public partial class MatchSelection : ContentPage
     private void TeamsListView_ItemTapped(object sender, ItemTappedEventArgs e)
     {
         var selectedMatchVaribale = TeamsListView.SelectedItem as Team;
+
         Navigation.PushAsync(new StatsPage(selectedMatchVaribale));
         
     }
